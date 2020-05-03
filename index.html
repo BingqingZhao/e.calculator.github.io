@@ -16,7 +16,8 @@
     </header>
 
     <main>
-        <div class="intro">
+        <div class="sq">
+            <h2>About</h2>
             <p>CALCULATE the environmental impacts of your prototype
                 COMPARE the impacts of different prototyping materials 
                 REDUCE your environmental impacts</p>
@@ -35,14 +36,117 @@
 
         <div class="q">
             <p class="q1">Choose your digital fabrication technique *</p>
-            <label class="radio_button"><input type="radio" value="change" name="change">Laser Cutting</label>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Laser Cutting</label>
             <br />
             <br />
-            <label class="radio_button"><Input type="radio" value="change" name="change">3D Printing</label>
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp 3D Printing</label>
+        </div>
+
+        <div class="sq">
+            <h2>3D Printing</h2>
+            <label for="opt"> Choose your model *</label> &nbsp
+            <br />
+            <br />
+            <select id="dropdown" class="dropdown"  name="opt">
+            <option disabled value="Select an option" >Select an option</option>
+            <option>--</option>
+            <option value="female">MakerBot Replicator+</option>
+            <option value="male">Ultimaker 2 Extended</option>
+            </select>
+        </div>
+
+        <div class="q">
+            <label for="opt"> Choose your prototyping material *</label> 
+            <br />
+            <br />
+            <select id="dropdown" class="dropdown"  name="opt">
+            <option disabled value="Select an option" >Select an option</option>
+            <option>--</option>
+            <option value="female">PLA</option>
+            <option value="male">ABS</option>
+            </select>
+        </div>
+
+        <div class="q">
+            <label id="name-label" for="Name">Weight(gr) *</label>
+            <br />
+            <br />
+            <input autofocus type="text" id="name" class="input-field" placeholder="Your ans..." name="name" required>
+        </div>
+
+        <div class="q">
+            <label id="name-label" for="Name">Support material (%) *</label>
+            <br />
+            <br />
+            <input autofocus type="text" id="name" class="input-field" placeholder="Your ans..." name="name" required>
+        </div>
+
+        <div class="q">
+            <label id="name-label" for="Name">Printing time (min) * <br /> i.e 14.5 instead of 14,5</label>
+            <br />
+            <br />
+            <input autofocus type="text" id="name" class="input-field" placeholder="Your ans..." name="name" required>
+        </div>
+
+        <div class="q">
+            <label id="name-label" for="Name"># Iteration (ie.1,2,3,...) *</label>
+            <br />
+            <br />
+            <input autofocus type="text" id="name" class="input-field" placeholder="Your ans..." name="name" required>
+        </div>
+
+        <div class="sq">
+            <h2>Transportation</h2>
+            <p class="q1">Where was your material manufactured? *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Local</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp National</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp International</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
+            </select>
+        </div>
+
+        <div class="q">
+            <p class="q1">Which method of shipment did you use? *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp By air</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp By sea</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp By road</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
+            </select>
+        </div>
+
+        <div class="sq">
+            <h2>End of life</h2>
+            <p class="q1">Do you know if the disposed material go to? *</p>
+            <label class="radio_button"><input type="radio" value="change" name="change">&nbsp Recycling facility</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp Incineration facility</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp Landfill</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp Compost facility</label>
+            <br />
+            <br />
+            <label class="radio_button"><Input type="radio" value="change" name="change">&nbsp I don't know</label>
+            </select>
         </div>
 
         <div class="button">
-            <button id="next" type="next">NEXT</button>
+            <button id="next" type="next">Submit</button>
         </div>
         
     </main>

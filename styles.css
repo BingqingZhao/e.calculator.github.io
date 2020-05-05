@@ -70,5 +70,5 @@ button{
 
 button:hover{
     text-decoration: underline;
-    background: rgba(144, 208, 52, 0.8); 
+    background: rgba(144, 208, 52, 0.5); 
   }
